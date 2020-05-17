@@ -1,0 +1,64 @@
+<html id="main">
+
+    <link rel="stylesheet" type="text/css" href="servey.css">
+    
+    <h1 id="title">Survey Test</h1>
+    <p id="description"> Thank You.</p>
+     <form id="survey-form">
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+            <input 
+                id="name"
+                placeholder="Please Enter Name"
+                required
+                />
+        <label id="mail-label" for="email">E-mail</label>
+            <input
+                id="email"
+                placeholder="Please Enter E-mail"
+                required
+                />
+        <label id="number-label" for="number">Age</label>
+            <input
+                id="number"
+                min="10"
+                max="99"
+                placeholder="Enter Age Here"
+                />
+        </div>
+            <p>How has your experience been?</p>
+        <select id="dropdown" class="form" required>
+            <option disabled selected value>Selection Option</option>
+            <option id="excellent">Excellent</option> 
+            <option id="good">Good</option>
+            <option id="okay">Okay</option>
+            <option id="poor">Poor</option>
+        </select> 
+
+        <p>How Likely are you to recommend our service?
+            <input type="radio" name="recommend" value="very-likely">
+            <label for="very-likely">Very Likely</label>
+            <input type="radio" name="recommend" value="sw-likely">
+            <label for="sw-likely">Somewhat Likely</label>
+            <input type="radio" name="recommend" value="nv-likely">
+            <label for="nv-likely">Not Very Likely</label>
+            <input type="radio" name="recommend" value="nla">
+            <label for="nla">Not Liekly At All</label>
+        </p>
+
+        <p>What Else Would You Like to See Here?</p>
+            <input type="checkbox" name="see" value="everything">
+            <label for="everything">Everything</label>
+            <input type="checkbox" name="see" value="more">
+            <label for="more">More</label>
+            <input type="checkbox" name="see" value="but-wait-theres-more">
+            <label for="but-wait-theres-more">But wait... there's more!</label>
+        
+        <p>Any additional comments?</p>
+            <textarea name="comment" placeholder="Please give us feedback">
+            </textarea>
+            <button type="submit" id="submit">
+                Submit!
+            </button>
+        </form>
+</html>
